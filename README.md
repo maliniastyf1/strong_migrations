@@ -112,7 +112,7 @@ end
   ```ruby
   class RemoveSomeColumnFromUsers < ActiveRecord::Migration[6.0]
     def change
-      safety_assured { remove_column :users, :some_column }
+      safety_assured { remove_column :users, :some_column, :column_type }
     end
   end
   ```
